@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body{
+    background-color: #fffafa;
+}
+
+.center {
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 0.1px solid rgb(200 ,200, 200);
+}
+
+.logo {
+    color: #16507b;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.menu{
+    width: 80%;
+    text-align: right;
+}
+
+.menu a{
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    color: #007bff;
+}
+
+.menu .btn-menu{
+    background-color: #438ec4;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+.menu .btn-menu:hover{
+    background-color: #254e6b;
+    color: white;
+}
+
+/*
+Section main
+*/
+
+.main__cta{
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main__cta h2{
+    color: #16507b;
+}
+
+.main__cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.main__cta button{
+    background-color: #438ec4;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dif{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dif-single{
+    border-radius: 8px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.dif-single i{
+    color: #438ec4;
+    font-size: 23px;
+}
+
+.dif-single h2{
+    color: #254e6b;
+    margin: 2px 0;
+    font-size: 17px;
+}
+
+.dif-single p{
+    color: gray;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*
+Section about
+*/
+
+section.about{
+    padding: 80px 0;
+}
+
+.about-call{
+    width: 100%;
+    text-align: center;
+}
+
+.about-call h2{
+    color: #254e6b;
+    text-transform: uppercase;
+}
+
+.about-call p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content p{
+    width: 48%;
+    margin-right: 2%;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .dif-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+    }
+    .mobile-menu{ 
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .mobile-menu i{ 
+        cursor: pointer;
+        font-size: 22px;
+        margin-top: 6px;
+     }
+    .about-content p{width: 100%; margin-bottom: 20px;}
+}
